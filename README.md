@@ -10,7 +10,7 @@ This project demonstrates the use of Hak5's USB rubber ducky to steal credential
 ## Installation of Password Cracking Website
 Commands here were tested on Ubuntu 16
 
-1. Get dependencies
+### 1. Get dependencies
 ```
 sudo apt dist-upgrade
 sudo apt update
@@ -26,7 +26,7 @@ sudo apt install git
 sudo apt install curl
 ```
 
-2. Get OpenCL Working (Optional)
+### 2. Get OpenCL Working (Optional)
 NOTE: This section is highly dependent on what hardware your computer has. This method worked for our computers.
 Hashcat will need OpenCL devices and headers to work properly. Unfortunately, Intel doesn’t support Ubuntu 16, so we need to do a bit of a workaround. First, go to https://software.intel.com/en-us/articles/opencl-drivers and download OpenCL Runtime 16.1.1 for Intel Core and Xeon Processors for Ubuntu (64-bit).
 We will assume that downloaded .tgz file is in the user’s Downloads directory, though it doesn’t really matter.
@@ -71,7 +71,7 @@ sudo ldconfig
 
 To test if this work, run `clinfo` and check the output, it should list OpenCL devices.
 
-3. Getting Hashcat and the pyHashcat Interface
+### 3. Getting Hashcat and the pyHashcat Interface
 To set up pyHashcat, clone the git repository. The key here is that we actually build Hashcat inside the pyHashcat directory.
 ```
 git clone https://github.com/Rich5/pyHashcat.git
@@ -91,13 +91,13 @@ sudo python setup.py install
 To test if everything is working, run python `test.py` in the pyhashcat directory. Hashcat should run and crack a single hash.
 Setting up the Website
 
-4. Download the wordlist from https://drive.google.com/drive/folders/1J6NDuljCyVdk5iFEwjPNzp7EfsSwsg3G?usp=sharing
+### 4. Download the wordlist from https://drive.google.com/drive/folders/1J6NDuljCyVdk5iFEwjPNzp7EfsSwsg3G?usp=sharing
 
 By default, our wordlist “princeCombo.txt” should be under ~/Documents/wordlist/. This wordlist contains about 693 million length 12 parallel-4 and parallel-3 passwords.
 
-5. To run the server, run `python PasswordCracking.py`. Then open a web browser and connect to 127.0.0.1:5000. 
+### 5. To run the server, run `python PasswordCracking.py`. Then open a web browser and connect to 127.0.0.1:5000. 
 
-6. To a fresh demo, remove the database, and restart the server:
+### 6. To a fresh demo, remove the database, and restart the server:
 ```
 rm demo_password_table.db
 sudo python PasswordCracking.py
