@@ -97,7 +97,7 @@ By default, our wordlist “princeCombo.txt” should be under ~/Documents/wordl
 
 ### 5. To run the server, run `python PasswordCracking.py`. Then open a web browser and connect to 127.0.0.1:5000. 
 
-### 6. To a fresh demo, remove the database, and restart the server:
+### 6. To do a fresh demo:
 ```
 rm demo_password_table.db
 sudo python PasswordCracking.py
