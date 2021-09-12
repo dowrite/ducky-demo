@@ -1,11 +1,16 @@
 # ducky-demo
-This project demonstrates the use of Hak5's USB rubber ducky to steal credentials and crack weak passwords.
+This project demonstrates the use of Hak5's USB rubber ducky to steal credentials and crack weak (keyboard pattern) passwords.
 
 ### This demo explains 2 concepts
 
 1. USB Rubber Ducky - Any USB device claiming to be a Keyboard Human Interface Device (HID) will be automatically detected and accepted by most modern operating systems. Whether it is a Windows, Mac, Linux, or Android device the Keyboard is King. By taking advantage of this inherent trust, the USB Rubber Ducky can bypass traditional countermeasures with scripted keystrokes at speeds beyond 1000 words per minute. The USB Rubber Ducky can perform malicious activities to grant the attacker privileged access to target system. 
 
-2. Password Cracking – Cracking a short password (8 characters or less) is trivial with modern computers. Password policies tend to enforce password length and complexity requirements to ensure high password entropy. However, humans aren't good at memorizing random symbols and characters, so they resort to patterns that will satisfy the password complexity requirements while still being memorable (https://ieeexplore.ieee.org/document/5375544). Keyboard patterns significantly reduce the problem space, making these types of passwords vulnerable to brute force attacks.The password cracking portion of this demo demonstrates this concept.
+2. Password Cracking – Cracking a short password (8 characters or less) is trivial with modern computers. Password policies tend to enforce password length and complexity requirements to ensure high password entropy. However, humans aren't good at memorizing random symbols and characters, so they resort to patterns that will satisfy the password complexity requirements while still being memorable (https://ieeexplore.ieee.org/document/5375544). Keyboard patterns significantly reduce the problem space, making these types of passwords vulnerable to brute force attacks. The password cracking portion of this demo demonstrates this concept.
+
+**NOTE:** To reduce the runtime of the password cracker, the following restrictions are assumed:
+- Passwords use md5 hashing algo
+- Passwords are exactly 12 characters
+- Password pattern contains 3 sets of 4 contiguous keys or 4 sets of 3 contiguous keys
 
 ## Installation of Password Cracking Website
 Commands here were tested on Ubuntu 16, but should work on any debian based distro like Kali.
