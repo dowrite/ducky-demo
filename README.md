@@ -26,7 +26,7 @@ sudo apt install git
 sudo apt install curl
 ```
 
-### 2. Get OpenCL Working (Optional)
+### 2. Get OpenCL Working (Optional?)
 NOTE: This section is highly dependent on what hardware your computer has. This method worked for our computers.
 Hashcat will need OpenCL devices and headers to work properly. Unfortunately, Intel doesn’t support Ubuntu 16, so we need to do a bit of a workaround. First, go to https://software.intel.com/en-us/articles/opencl-drivers and download OpenCL Runtime 16.1.1 for Intel Core and Xeon Processors for Ubuntu (64-bit).
 We will assume that downloaded .tgz file is in the user’s Downloads directory, though it doesn’t really matter.
@@ -95,9 +95,13 @@ Setting up the Website
 
 By default, our wordlist “princeCombo.txt” should be under ~/Documents/wordlist/. This wordlist contains about 693 million length 12 parallel-4 and parallel-3 passwords.
 
-### 5. To run the server, run `python PasswordCracking.py`. Then open a web browser and connect to 127.0.0.1:5000. 
+### 5. Start the web server
+```
+python PasswordCracking.py
+```
+Then open a web browser and connect to 127.0.0.1:5000 to access the site.
 
-### 6. To do a fresh demo:
+### 6. To do a fresh demo
 ```
 rm demo_password_table.db
 sudo python PasswordCracking.py
