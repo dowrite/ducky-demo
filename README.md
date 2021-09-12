@@ -13,6 +13,8 @@ This project demonstrates the use of Hak5's USB rubber ducky to steal credential
 - Password pattern contains 3 sets of 4 contiguous keys or 4 sets of 3 contiguous keys
 
 ## Installation of Password Cracking Website
+The password cracking website can be a standalone demo of password cracking. It can also be sent password hashes (i.e. by a USB rubber ducky payload) from another computer.
+
 Commands here were tested on Ubuntu 16, but should work on any debian based distro like Kali.
 
 ### 1. Get dependencies
