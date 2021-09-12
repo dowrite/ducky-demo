@@ -1,0 +1,143 @@
+body
+{
+	background-color: #000;
+	font-family: 'Courier';
+	font-size: 14px;
+	color: #52fa54;
+}
+
+#wrapper
+{
+	position: absolute;
+	text-align: justify;
+	width: 800px;
+	top: 20%;
+	left: 50%;
+	margin: 0 0 0 -350px;
+	padding: 25px;
+	/*background-color: #ff0000;*/
+}
+
+#createdHash
+{
+	position: relative;
+	top: 50px;
+}
+#footer
+{
+	position: relative;
+	top: 100px;
+}
+
+#introduction
+{
+	background-color: #000;
+	padding: 25px;
+}
+
+#testPassword
+{
+	position: relative;
+	top: 50px;
+}
+
+h3
+{
+	text-align: center;
+}
+
+#aboutUsIntro
+{
+	background-color: #000
+;
+	padding: 25px;
+}
+
+#memberList
+{
+	background-color: #41719c;
+	position: relative;
+	text-align: justify;
+	padding: 25px;
+}
+
+.table
+{
+	background-color: #000;
+}
+
+.td
+{
+    font-size: 14px;
+}
+
+.col
+{
+	/*border: 1px solid black;*/
+	text-align: center;
+}
+
+.col img
+{
+	width: 100px;
+	height: 100px;
+}
+
+.figure-caption
+{
+	color:#fff;
+	text-align: center;
+}
+
+.btn
+{
+	margin: 15px;
+}
+
+.input-group-btn button
+{
+	margin: 0px;
+}
+
+.figure > img:hover
+{
+	box-shadow: 4px 4px 3px #505050;
+}
+
+a:active, a:link, a:visited
+{
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover
+{
+	color:#bababa;
+}
+
+h1
+{
+	font-size: 50px;
+	border-bottom: 5px solid #fff;
+	box-shadow: 0px 5px 0px #242728;
+	margin-bottom: 25px;
+	padding-left: 10px;
+}
+
+h2
+{
+	font-size: 25px;
+	padding-top:15px;
+	text-align: left;
+}
+
+h3
+{
+
+}
+
+
+.modal-body, .modal-title
+{
+	color:#000;
+}
