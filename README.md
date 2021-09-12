@@ -8,7 +8,7 @@ This project demonstrates the use of Hak5's USB rubber ducky to steal credential
 2. Password Cracking – Cracking a short password (8 characters or less) is trivial with modern computers. Password policies tend to enforce password length and complexity requirements to ensure high password entropy. However, humans aren't good at memorizing random symbols and characters, so they resort to patterns that will satisfy the password complexity requirements while still being memorable (https://ieeexplore.ieee.org/document/5375544). Keyboard patterns significantly reduce the problem space, making these types of passwords vulnerable to brute force attacks.The password cracking portion of this demo demonstrates this concept.
 
 ## Installation of Password Cracking Website
-Commands here were tested on Ubuntu 16
+Commands here were tested on Ubuntu 16, but should work on any debian based distro like Kali.
 
 ### 1. Get dependencies
 ```
@@ -32,7 +32,7 @@ Hashcat will need OpenCL devices and headers to work properly. Unfortunately, In
 We will assume that downloaded .tgz file is in the user’s Downloads directory, though it doesn’t really matter.
 Install a tool that will turn .rpm files to .deb:
 ```
-sudo apt-get install –y rpm alien libnuma1
+sudo apt install –y rpm alien libnuma1
 ```
 
 Go to the Downloads folder and unzip the OpenCL tar file:
@@ -91,7 +91,9 @@ sudo python setup.py install
 To test if everything is working, run python `test.py` in the pyhashcat directory. Hashcat should run and crack a single hash.
 Setting up the Website
 
-### 4. Download the wordlist from https://drive.google.com/drive/folders/1J6NDuljCyVdk5iFEwjPNzp7EfsSwsg3G?usp=sharing
+### 4. Getting wordlist
+
+Download the wordlist from https://drive.google.com/drive/folders/1J6NDuljCyVdk5iFEwjPNzp7EfsSwsg3G?usp=sharing
 
 By default, our wordlist “princeCombo.txt” should be under ~/Documents/wordlist/. This wordlist contains about 693 million length 12 parallel-4 and parallel-3 passwords.
 
